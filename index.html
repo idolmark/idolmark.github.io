@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARK IDOL</title>
+</head>
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 4960 2790">
+        <image width="100%" height="100%" xlink:href="img/3.png"></image> <a xlink:href="#openModal1">
+          <rect id="1" x="40" y="776" fill="#fff" opacity="0" width="1284" height="1328"></rect>
+        </a><a xlink:href="#openModal2">
+          <rect id="2" x="1376" y="772" fill="#fff" opacity="0" width="1132" height="1332"></rect>
+        </a><a xlink:href="#openModal3">
+          <rect id="3" x="2592" y="768" fill="#fff" opacity="0" width="1056" height="1336"></rect>
+        </a><a xlink:href="#openModal4">
+          <rect id="4" fill="red" x="3700" y="768" fill="#fff" opacity="0" width="1200" height="1330"></rect>
+        </a>
+      </svg>
+    <style>
+        svg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .main_pic {
+            height: auto;
+            width: 100%
+        }
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+        * { margin: 0 0 0 0; padding: 0 0 0 0; }
+
+    </style>
+    <script>
+    </script>
+    <!-- HTML модального окна -->
+<div id="openModal1" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a href="#close">
+            <img class="subimg" src="./img/Frame 8.png" alt="">
+          </a>   
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="openModal2" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a href="#close">
+            <img class="subimg" src="./img/Frame 7.png" alt="">
+          </a>   
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="openModal3" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a href="#close">
+            <img class="subimg" src="./img/Frame 6.png" alt="">
+          </a>   
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="openModal4" class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <a href="#close">
+            <img class="subimg" src="./img/Frame 5.png" alt="">
+          </a>   
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+  .subimg {
+      max-width:800px;
+      max-height:1200px;
+      width: auto;
+      height: auto;
+      margin-left: auto;
+  }
+  /* Стили всплывающего окна по-умолчанию */
+  .modal {
+      position: fixed; /* фиксированное положение */
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.5); /* фон */
+      z-index: 1050;
+      opacity: 0; /* по умолчанию модальное окно прозрачно */
+      -webkit-transition: opacity 200ms ease-in; 
+      -moz-transition: opacity 200ms ease-in;
+      transition: opacity 200ms ease-in; /* анимация перехода */
+      pointer-events: none; /* элемент невидим для событий мыши */
+      margin: 0;
+      padding: 0;
+  }
+  /* При отображении модального окно */
+  .modal:target {
+      opacity: 1; /* делаем окно видимым */
+        pointer-events: auto; /* элемент видим для событий мыши */
+      overflow-y: auto; /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+  }
+  /* ширина модального окна и его отступы от экрана */
+  .modal-dialog {
+      position: relative;
+      width: auto;
+      margin: 10px;
+  }
+  @media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 850px;
+        margin: 30px auto; /* отображение окна по центру */
+    }
+  }
+  /* Стили для блока с контентом окна */ 
+  .modal-content {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #a10594;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid rgba(0,0,0,.2);
+      border-radius: .3rem;
+      outline: 0;
+  }
+  @media (min-width: 768px) {
+    .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+        box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    }
+  }
+  /* Стили блока основного содержимого окна */
+  .modal-body {
+    position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 15px;
+      overflow: auto;
+  }
+  </style>
+</body>
+</html>
